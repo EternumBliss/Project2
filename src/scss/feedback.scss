@@ -1,0 +1,52 @@
+.feedback{
+  padding: 10px 0 70px 0;
+
+  &__title{
+    @include text($Museo700, 30px, black);
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+  &__content{
+    width: 883px;
+    height: 190px;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  &__picture{
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+  }
+  &__commentText{
+    margin-left: 62px;
+  }
+  &__commentText p{
+    &:first-child{
+      @include text($Museo700, 18px, black);
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    &:nth-child(2){
+      @include text($Museo300, 14px, #646464);
+      padding-bottom: 19px;
+      font-weight: bold;
+    }
+    &:nth-child(3){
+      @include text($Museo300, 16px, black);
+      padding-bottom: 19px;
+      font-weight: bold;
+    }
+    &:nth-child(4){
+      @include text($Museo300, 16px, black);
+      padding-bottom: 19px;
+      font-weight: bold;
+    }
+    &:nth-child(5){
+      @include text($Museo300, 16px, black);
+      font-weight: bold;
+    }
+  }
+
+}

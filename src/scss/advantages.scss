@@ -1,0 +1,34 @@
+.advantages {
+
+  &__title {
+    @include text($Museo700, 30px, black);
+    margin-top: 81px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__col{
+    height: 221px;
+    margin-top: 65px;
+    &__title{
+      @include text($Museo700, 18px, black);
+      text-align: center;
+    }
+    &__subtitle{
+      @include text($Museo300, 14px, black);
+      margin-top: 27px;
+      text-align: center;
+      a{
+        text-transform: uppercase;
+        color: red;
+      }
+    }
+  }
+  &__img{
+    height: 70px;
+    width: 70px;
+    left: 50%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+
+  }
+}

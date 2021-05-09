@@ -1,0 +1,42 @@
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+  .feedback {
+    &__content {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .slider .owl-carousel .owl-item img {
+    width: 100%;
+  }
+  .consult{
+    margin-top: 75px;
+  }
+  .header__logo__image {
+    height: 55px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 576px) {
+  .consult{
+    margin-top: 100px;
+  }
+}

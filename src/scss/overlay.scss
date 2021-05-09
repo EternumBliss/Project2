@@ -1,0 +1,149 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .56);
+  z-index: 1;
+  display: none;
+  &__closeSurface-top{
+    height: 29vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  &__closeSurface-right{
+    height: 100vh;
+    width: 40%;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  &__closeSurface-bottom{
+    height: 29vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  &__closeSurface-left{
+    height: 100vh;
+    width: 40%;
+    position: fixed;
+    left: 0;
+  }
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  max-height: 400px;
+  padding: 32px 40px 40px 42px;
+  background: #f2f2f2;
+  z-index: 5;
+
+  &__consultation {
+    display: none;
+
+    &-title {
+      @include text($Museo700, 18px, black);
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 7px;
+    }
+
+    &-subtitle {
+      @include text($Museo500, 14px, rgba(13, 13, 13, 1));
+      line-height: 16px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -41px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 40%;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: $red;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 40%;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: $red;
+      transform: rotate(-45deg);
+
+    }
+  }
+
+  &__order {
+    display: none;
+    &-title {
+      @include text($Museo700, 18px, black);
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 7px;
+    }
+
+    &-subtitle {
+      @include text($Museo500, 14px, rgba(13, 13, 13, 1));
+      line-height: 16px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+  }
+
+  &__thanks {
+    display: none;
+    &-title {
+      @include text($Museo700, 18px, black);
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 31px;
+    }
+
+    &-subtitle {
+      @include text($Museo500, 14px, rgba(13, 13, 13, 1));
+      line-height: 16px;
+      margin-bottom: 7px;
+      text-align: center;
+    }
+  }
+  &__thanksBuy{
+    display: none;
+    &-title{
+      @include text($Museo700, 18px, black);
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 31px;
+    }
+    &-subtitle{
+      @include text($Museo500, 14px, rgba(13, 13, 13, 1));
+      line-height: 16px;
+      margin-bottom: 7px;
+      text-align: center;
+    }
+  }
+
+}
+

@@ -1,0 +1,67 @@
+@import "../libs/bootstrap/bootstrap-grid.min.css";
+@import "../fonts/museo/stylesheet.css";
+@import "../fonts/myriad/stylesheet.css";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container{
+  max-width: 942px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+$Museo: Museo, sans-serif;
+$Museo700: "Museo Sans Cyrl 700", sans-serif;
+$Museo500: "Museo Sans Cyrl 500", sans-serif;
+$Museo300: "Museo Sans Cyrl 300", sans-serif;
+$MyriadPro: "Myriad Pro", sans-serif;
+$red: #C70101;
+
+.go-top{
+  width: 100px;
+  height: 25px;
+  background-color: $red;
+  color: white;
+  text-decoration: none;
+  font-family: $Museo500;
+  text-align: center;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+  line-height: 25px;
+}
+
+@mixin text($ff, $fs, $cr){
+  font-family: $ff;
+  font-size: $fs;
+  color: $cr;
+}
+
+@import "header";
+@import "advantages";
+@import "consult";
+@import "slider";
+@import "catalog";
+@import "feedback";
+@import "footer";
+@import "media";
+@import "overlay";
+
+
+
+
+
+
+

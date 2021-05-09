@@ -1,0 +1,48 @@
+.footer{
+  &__block{
+    width: 461px;
+    height: 271px;
+    background-color: $red;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 51px;
+  }
+
+  &__address{
+    @include text($Museo300, 20px, white);
+    margin-bottom: 36px;
+  }
+
+  &__tel{
+    @include text($Museo700, 20px, white);
+    margin-bottom: 35px;
+  }
+
+  &__images{
+    justify-content: center;
+
+  }
+
+  &__link{
+    margin-right: 29px;
+    text-decoration: none;
+    &:last-child{
+    margin-right: 0;
+    }
+  }
+  &__img{
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+
+
+}
